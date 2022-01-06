@@ -1,0 +1,155 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #ececf8;
+}
+
+.heading{
+    width: 100vw;
+    height: 3.5rem;
+    background-color: yellow;
+    padding: 10px;
+    box-shadow: 0px 5px 16px rgb(248, 247, 247);
+}
+
+.heading h1{
+    font-family: calibri;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.btn-div{
+    display: block;
+    position: fixed;
+    top: 5rem;
+    right: 4rem;
+    cursor: pointer;
+    z-index: 1;
+}
+
+button{
+    outline: none;
+    border: none;
+}
+
+button.addBtn{
+    position: relative;
+    width: 12rem;
+    height: 40px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: calibri;
+    font-size: 18px;
+    letter-spacing: 3px;
+    z-index: 1;
+    transition: all 0.3s ease-out;
+    color: #fffb0e;
+    background: #797b7c;
+    border-radius: 15px;
+}
+
+.addBtn:hover{
+    color: black;
+    cursor: pointer;
+    background: yellow;
+    box-shadow: 1px 1px 4px  #61615e, -1px -1px 4px  #61615e ;
+}
+
+.addBtn::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background: #fffb0e;
+    left: 0;
+    top: 0;
+    border-radius: 15px;
+    z-index: -1;
+    transition: all 0.3s ease-out;
+}
+
+.addBtn:hover::after {
+    width: 100%;
+}
+
+.note{
+    float: left;
+    position: relative;
+    background-color: #fff;
+    margin: 30px 20px;
+    height: 160px;
+    width: 230px;
+    margin-top: 5rem;
+    box-shadow: 0px 0px 5px 0.5px  rgb(94, 91, 91);
+    
+}
+
+.note .operation{
+    display: flex;
+    justify-content: right;
+    padding: 0.5rem;
+    border-bottom: inset ;
+
+}
+
+.note .operation button{
+    background-color: transparent;
+    border: none;
+    color: #fff;
+    font-size: 0.5rem;
+    margin-left: 0.5rem;
+}
+
+.note textarea{
+    font-family: inherit;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    height: 107px;
+    width: 100%;
+    padding: 10px 20px;
+    overflow: auto; 
+    resize: none; 
+}
+
+.fa-edit,
+.fa-trash-alt{
+    color: #fff;
+    padding: 10px;
+    background-color: rgb(5, 201, 5);
+    border-radius: 50%;
+}
+
+.fa-trash-alt{
+    background-color: rgb(255, 0, 0);
+}
+
+.fa-edit:hover{
+    background-color: #fff;
+    color: mediumaquamarine;
+    filter: drop-shadow(0px,10px,8px rgb(219, 218, 218));
+}
+
+.fa-trash-alt:hover{
+    background-color: #fff;
+    color: #e74c3c;
+    filter: drop-shadow(0px,10px,8px rgb(219,218,218));
+}
+
+.main{
+    font-family: calibri;
+    padding: 10px 20px;
+    height:105px;
+    font-weight: bold;
+    overflow: auto;
+    width: 100%;
+    
+}
+
+.hidden{
+    display: none;
+}
